@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script>
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        m = checkTime(m);
+        document.getElementById('clock').innerHTML =
+        h + ":" + m
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+    </script>
+    <title>Homescreen</title>
+    <link rel="stylesheet" href="assets/main.css">
+  </head>
+  <body onload="startTime()">
+    <header>
+      <!-- <div id="api-response">
+
+      </div> -->
+      <div class="container-header">
+        <div class="container-header__col" id="clock">
+
+        </div>
+        <div class="container-header__col two">
+
+        </div>
+        <div class="container-header__col three">
+          <div class="container-header__col__weather">
+            <div class="container-header__col__weather__top">
+              <div class="container-header__col__weather__top__image">
+                <img id="weather-image" src="" alt="">
+              </div>
+              <div class="container-header__col__weather__top__temp" id="weather-temp">
+
+              </div>
+            </div>
+            <div class="container-header__col__weather__bottom">
+              <div class="container-header__col__weather__bottom__city" id="weather-city">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="assets/callback.js"></script>
+    <script type="text/javascript" src="assets/api.js">
+
+    </script>
+  </body>
+</html>

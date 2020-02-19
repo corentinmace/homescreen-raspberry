@@ -1,0 +1,60 @@
+/*
+#0D0C1D
+#1F2421
+#2B2F45
+#414369
+#FDFFFC
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #0D0C1D;
+  color: #FDFFFC;
+}
+
+header {
+  min-height: 20vh;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.container-header__col {
+  width: 15%;
+}
+
+#clock {
+  font-size: 3em;
+  margin: 2%;
+}
+
+.container-header__col__weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-header__col__weather__top {
+  display: flex;
+  font-size: 3em;
+  align-items: center;
+}
+
+.container-header__col__weather__bottom {
+  border-top: 1px solid;
+  padding: 5px;
+}
+
+.container-header__col__weather__top__image {
+  display: inline-flex;
+}

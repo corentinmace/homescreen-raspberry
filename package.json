@@ -1,0 +1,28 @@
+{
+  "name": "homescreen-raspberry",
+  "version": "1.0.0",
+  "description": "Homescreen for my raspberry Pi",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corentinmace/homescreen-raspberry.git"
+  },
+  "author": "Corentin Mace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/corentinmace/homescreen-raspberry/issues"
+  },
+  "homepage": "https://github.com/corentinmace/homescreen-raspberry#readme",
+  "devDependencies": {
+    "electron": "^8.0.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.0.6",
+    "bootstrap": "^4.4.1",
+    "bootstrap-icons": "^1.0.0-alpha2",
+    "jquery": "^3.4.1"
+  }
+}
